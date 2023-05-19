@@ -184,8 +184,9 @@ main h1 {
 
 /*carrossel*/
 .carousel {
-    height: auto;
-    width: 65%;
+    min-height: auto;
+    max-height: 85vh;
+    width: 85%;
     margin: 0 auto 1vw auto;
 }
 
@@ -196,7 +197,8 @@ main h1 {
 
 .img_carrossel {
     width: max-content;
-    height: auto;
+    min-height: auto;
+    max-height: 85vh;
 }
 
 #carousel_control_next, #carousel_control_prev {
@@ -373,6 +375,41 @@ main h1 {
     margin: 2vw 0;
     background-color: #1d4988;
     color: #F7F7F7;
+}
+
+/*   main do sobre nós   */
+#section_principal_do_sobre_nos {
+    margin: 7vw 17% 1vw 17%;
+    padding: 1vw;
+    background-color: #F7F7F7;
+}
+
+/*section sobre a empresa*/
+#section_principal_do_sobre_nos section {
+    border-bottom: 0.2vw dotted #1d4988;
+}
+
+.p_do_sobre_nos {
+    font-size: 1.1vw;
+}
+
+#info_sobre_empresa {
+    font-size: 1.3vw;
+}
+
+#logo_mais_titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#logo_do_sobre_nos {
+    height: auto;
+    width: 100%;
+}
+
+#titulo_do_sobre_nos {
+    text-align: center;
+    margin: auto;
 }
 
 /*     footer     */
