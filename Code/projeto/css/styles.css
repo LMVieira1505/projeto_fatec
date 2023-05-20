@@ -410,6 +410,22 @@ main h1 {
 #titulo_do_sobre_nos {
     text-align: center;
     margin: auto;
+    color: #;
+}
+
+/*section sobre os membros*/
+.titulo_da_section_sobre_nos {
+    color: #1d4988;
+    font-size: 3vw;
+}
+
+.descricao_dos_membros {
+    display: flex;
+}
+
+.descricao_dos_membros img {
+    width: 10%;
+    height: 10%;
 }
 
 /*     footer     */
