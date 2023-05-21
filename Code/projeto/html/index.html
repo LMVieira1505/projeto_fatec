@@ -8,12 +8,17 @@
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!--  /header desktop/  -->
-    <header >
+    <!--  header  -->
+    <header>
         <!--logo-->
-        <a href="../html/index.html"><img id="logo_header_desktop" src="../img/index_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS"></a>
+        <a id="container_da_logo" href="../html/index.html">
+            <!--desktop-->
+            <img id="logo_header_desktop" src="../img/index_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
+            <!--mobile-->
+            <img id="logo_header_mobile" src="../img/index_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
+        </a>
         <!--nav-->
-        <nav>
+        <nav id="container_das_categorias">
             <ul class="links_paginas_categorias">
                 <li><a class="link_header_empregos" href="empregos.html">Empregos</a></li>
                 <li><a class="link_header_educacao" href="educacao.html">Educação</a></li>
@@ -34,7 +39,7 @@
                     <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="addon-wrapping">
                 </div>
             </a>
-            <a href="#login#">
+            <a id="botao_de_login" href="#login#">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -43,6 +48,30 @@
                 </button>
             </a>
         </div>
+        <!--menu hamburger mobile-->
+        <!--botão na home-->
+        <button id="menu_hamburger" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#barra_lateral" aria-controls="barra_lateral">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <!--barra lateral-->
+        <aside id="barra_lateral" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <!--links das páginas na barra lateral-->
+            <nav class="offcanvas-body">
+                <ul class="links_paginas_categorias">
+                    <li><a class="link_header_empregos" href="empregos.html">Empregos</a></li>
+                    <li><a class="link_header_educacao" href="educacao.html">Educação</a></li>
+                    <li><a class="link_header_esportes" href="esportes.html">Esportes</a></li>
+                    <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>                        
+                    <li><a class="link_header_economia" href="economia.html">Economia</a></li>
+                    <li><a class="link_do_aside">Home</a></li>
+                    <li><a class="link_do_aside">Login</a></li>
+                    <li><a class="link_do_aside">Sobre Nós</a></li>
+                    <li><a class="link_do_aside">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </aside>
     </header>
     <!--  /main desktop/  -->
     <main>
