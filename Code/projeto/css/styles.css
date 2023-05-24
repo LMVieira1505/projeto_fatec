@@ -382,7 +382,8 @@ main h1 {
     color: #F7F7F7;
 }
 
-/*     main do sobre nós     */
+/*     sobre nós     */
+/* main do sobre nós */
 #section_principal_do_sobre_nos {
     margin: 7vw 17% 1vw 17%;
     padding: 1vw;
@@ -440,6 +441,7 @@ main h1 {
 .container_dos_servicos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2vw;
 }
 
 .container_dos_servicos img {
@@ -451,6 +453,10 @@ main h1 {
 .container_dos_servicos div {
     margin: auto;
     text-align: center;
+}
+
+#container_economia {
+    margin-bottom: 0;
 }
 
 /*     footer     */
@@ -700,6 +706,102 @@ footer ul {
         display: block;
         width: 100%;
         margin-bottom: 2vh;
+    }
+
+    /*pagina aberta*/
+    /*main*/
+    #main_da_noticia_aberta {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12vh;
+    }
+
+    #main_da_noticia_aberta h1 {
+        font-size: 9vw;
+    }
+
+    #main_da_noticia_aberta h2 {
+        font-size: 5vw;
+    }
+
+    #main_da_noticia_aberta h3 {
+        width: max-content;
+        max-width: 70%;
+        font-size: 3vw;
+        margin: 0 5% 2% auto;
+    }
+
+    #main_da_noticia_aberta p {
+        font-size: 4vw;
+    }
+
+    #main_da_noticia_aberta article img {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    /*add*/
+    #add_2_noticia_aberta {
+        display: none;
+    }
+
+    /*     pagina sobre nós     */
+    /* main do sobre nós */
+    /*sobre empresa*/
+    #section_principal_do_sobre_nos {
+        margin: 0 1% 1%;
+    }
+
+    #logo_mais_titulo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo_do_sobre_nos {
+        order: 2;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #titulo_do_sobre_nos {
+        order: 1;
+        margin-bottom: 1vw;
+    }
+
+    #info_sobre_empresa {
+        font-size: 3.6vw;
+    }
+
+    .p_do_sobre_nos {
+        font-size: 3.8vw;
+    }
+
+    /*sobre membros*/
+    .titulo_da_section_sobre_nos {
+        font-size: 8vw;
+    }
+
+    .descricao_dos_membros img {
+        width: 20%;
+    }
+
+    /*sobre serviços*/
+    .container_dos_servicos {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vw;
+    }
+
+    .container_dos_servicos div {
+        order: 1;
+    }
+
+    .container_dos_servicos img {
+        order: 2;
+    }
+
+    #container_economia {
+        margin-bottom: 0vw;
     }
 
     /*     footer     */
