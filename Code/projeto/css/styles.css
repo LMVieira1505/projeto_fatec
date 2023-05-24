@@ -492,7 +492,7 @@ footer ul {
 }
 
 /*     mobile     */
-@media (max-width:375px) {
+@media (max-width:475px) {
     /*     header     */
     #logo_header_desktop, #container_das_categorias, #botao_de_login, #botao_home {
         display: none;
@@ -501,6 +501,26 @@ footer ul {
     header {
         height: 11vh;
         border-bottom: 2vw solid #1d4988;
+    }
+
+    #pag_empregos {
+        border-bottom-color: #137AAD;
+    }
+
+    #pag_educacao {
+        border-bottom-color: #7478AD;
+    }
+
+    #pag_esportes {
+        border-bottom-color: #51BF2C;
+    }
+
+    #pag_entretenimento {
+        border-bottom-color: #F3A807;
+    }
+
+    #pag_economia {
+        border-bottom-color: #D93D4A;
     }
 
     /*hamburger menu*/
@@ -637,6 +657,10 @@ footer ul {
         display: none;
     }
 
+    .pag_sem_cotacoes {
+        margin-top: 12vh;
+    }
+
     /*titulo do carrossel*/
     .carousel-item h2 {
         font-size: 5vw;
@@ -659,9 +683,11 @@ footer ul {
 
     .noticia_main h4 {
         font-size: 5vw;
+        padding-top: 1vh;
+        padding-bottom: 3vh;
     }
 
-    .descricao_da_noticia {
+    .descricao_da_noticia, .informacoes_da_noticia {
         display: none;
     }
 
@@ -674,5 +700,16 @@ footer ul {
         display: block;
         width: 100%;
         margin-bottom: 2vh;
+    }
+
+    /*     footer     */
+    /*social media*/
+    footer ul {
+        margin: 0;
+        padding: 3%
+    }
+
+    .footer_social_media p {
+        margin-left: 1vw;
     }
 }
