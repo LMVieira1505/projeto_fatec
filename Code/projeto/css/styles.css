@@ -3,15 +3,6 @@ body {
 }
 
 /*     header     */
-.modal{
-    margin-top: 17vh;
-}
-#entrar{
-    width: max-content;
-}
-.modal-backdrop {
-    z-index: 9;
-}
 header {
     position: fixed;
     top: 0%;
@@ -178,7 +169,15 @@ header button {
 #search_bar {
     height: 2.5vw;
 }
-
+.modal{
+    margin-top: 17vh;
+}
+#entrar{
+    width: max-content;
+}
+.modal-backdrop {
+    z-index: 9;
+}
 /*     main    */
 
 main{
