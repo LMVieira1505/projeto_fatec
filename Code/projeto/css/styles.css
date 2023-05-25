@@ -16,6 +16,26 @@ header {
     border-bottom: 0.5vw solid #1d4988;
 }
 
+#pag_empregos {
+    border-bottom-color: #137AAD;
+}
+
+#pag_educacao {
+    border-bottom-color: #7478AD;
+}
+
+#pag_esportes {
+    border-bottom-color: #51BF2C;
+}
+
+#pag_entretenimento {
+    border-bottom-color: #F3A807;
+}
+
+#pag_economia {
+    border-bottom-color: #D93D4A;
+}
+
 /*  logos  */
 /*desktop*/
 #logo_header_desktop {
@@ -189,8 +209,8 @@ main h1 {
 /*carrossel*/
 .carousel {
     min-height: auto;
-    max-height: 85vh;
-    width: 65%;
+    max-height: 75vh;
+    width: 75%;
     margin: 0 auto 1vw auto;
 }
 
@@ -202,7 +222,7 @@ main h1 {
 .img_carrossel {
     width: max-content;
     min-height: auto;
-    max-height: 85vh;
+    max-height: 75vh;
 }
 
 #carousel_control_next, #carousel_control_prev {
@@ -374,6 +394,10 @@ main h1 {
     border: 0.1vw solid #141414;
 }
 
+#add_mobile {
+    display: none;
+}
+
 /*titulo de seção*/
 .titulo_de_secao {
     padding: 1vw 0;
@@ -485,6 +509,10 @@ footer ul {
     margin-top: 1vw;
     color: #fcffff;
     text-decoration: none;
+}
+
+#sobre_nos_icon {
+    width: 2vw;
 }
 
 .footer_social_media p {
@@ -650,13 +678,13 @@ footer ul {
     /*carrossel*/
     .carousel {
         width: 98%;
-        height: 30vh;
+        height: 35vh;
         margin-top: 1vh;
     }
 
     .img_carrossel {
         width: max-content;
-        height: 30vh;
+        height: 35vh;
     }
 
     .carousel-indicators {
@@ -710,10 +738,14 @@ footer ul {
 
     /*pagina aberta*/
     /*main*/
-    #main_da_noticia_aberta {
-        display: flex;
-        flex-direction: column;
-        padding-top: 12vh;
+    #main_da_noticia_aberta{
+        display: block;
+        margin: 12vh 2.5% 1vh;
+        padding: 0;
+    }
+
+    #main_da_noticia_aberta article {
+        background-color: #F7F7F7;
     }
 
     #main_da_noticia_aberta h1 {
@@ -721,14 +753,15 @@ footer ul {
     }
 
     #main_da_noticia_aberta h2 {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
 
     #main_da_noticia_aberta h3 {
         width: max-content;
         max-width: 70%;
         font-size: 3vw;
-        margin: 0 5% 2% auto;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     #main_da_noticia_aberta p {
@@ -738,11 +771,21 @@ footer ul {
     #main_da_noticia_aberta article img {
         width: 95%;
         margin-left: 2.5%;
+        margin-right: auto;
     }
 
     /*add*/
-    #add_2_noticia_aberta {
+    #add_1_noticia_aberta, #add_2_noticia_aberta {
         display: none;
+    }
+
+    #add_mobile {
+        display: block;
+        border: 0.1vw solid #141414;
+    }
+
+    #img_add_mobile {
+        width: 100%;
     }
 
     /*     pagina sobre nós     */
