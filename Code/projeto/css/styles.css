@@ -3,6 +3,15 @@ body {
 }
 
 /*     header     */
+.modal{
+    margin-top: 17vh;
+}
+#entrar{
+    width: max-content;
+}
+.modal-backdrop {
+    z-index: 9;
+}
 header {
     position: fixed;
     top: 0%;
