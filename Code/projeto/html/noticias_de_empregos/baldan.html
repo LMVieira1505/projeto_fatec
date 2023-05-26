@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GWI Esportes</title>
+    <title>GWI Empregos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!--  header  -->
-    <header id="pag_esportes">
+    <header id="pag_empregos">
         <!--logo-->
-        <a id="container_da_logo" href="../html/index.html">
+        <a id="container_da_logo" href="../../html/index.html">
             <!--desktop-->
-            <img id="logo_header_desktop" src="../img/esportes_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_desktop" src="../../img/esportes_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
             <!--mobile-->
-            <img id="logo_header_mobile" src="../img/esportes_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_mobile" src="../../img/esportes_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
         </a>
         <!--nav-->
         <nav id="container_das_categorias">
             <ul class="links_paginas_categorias">
-                <li><a class="link_header_empregos" href="empregos.html">Empregos</a></li>
-                <li><a class="link_header_educacao" href="educacao.html">Educação</a></li>
-                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_esportes" href="esportes.html">Esportes</a></li>
-                <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>
-                <li><a class="link_header_economia" href="economia.html">Economia</a></li>
+                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_empregos" href="../empregos.html">Empregos</a></li>
+                <li><a class="link_header_educacao" href="../educacao.html">Educação</a></li>
+                <li><a class="link_header_esportes" href="../esportes.html">Esportes</a></li>
+                <li><a class="link_header_entretenimento" href="../entretenimento.html">Entretenimento</a></li>
+                <li><a class="link_header_economia" href="../economia.html">Economia</a></li>
             </ul>
         </nav>
         <!--buttons-->
@@ -73,7 +73,7 @@
                 </button>
             </a>
             <!--home-->
-            <a href="../html/index.html">
+            <a href="../index.html">
                 <button id="botao_home">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
@@ -94,125 +94,45 @@
             <!--links das páginas na barra lateral-->
             <nav class="offcanvas-body">
                 <ul class="links_paginas_categorias">
-                    <li><a class="link_header_empregos" href="empregos.html">Empregos</a></li>
-                    <li><a class="link_header_educacao" href="educacao.html">Educação</a></li>
-                    <li><a class="link_header_esportes" href="esportes.html">Esportes</a></li>
-                    <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>                        
-                    <li><a class="link_header_economia" href="economia.html">Economia</a></li>
-                    <li><a class="link_do_aside" href="../html/index.html">Home</a></li>
+                    <li><a class="link_header_empregos" href="../empregos.html">Empregos</a></li>
+                    <li><a class="link_header_educacao" href="../educacao.html">Educação</a></li>
+                    <li><a class="link_header_esportes" href="../esportes.html">Esportes</a></li>
+                    <li><a class="link_header_entretenimento" href="../entretenimento.html">Entretenimento</a></li>                        
+                    <li><a class="link_header_economia" href="../economia.html">Economia</a></li>
+                    <li><a class="link_do_aside" href="../index.html">Home</a></li>
                     <li><a class="link_do_aside" href="#">Login</a></li>
-                    <li><a class="link_do_aside" href="../html/sobre_nos.html">Sobre Nós</a></li>
+                    <li><a class="link_do_aside" href="../sobre_nos.html">Sobre Nós</a></li>
                     <li><a class="link_do_aside" href="#">Fale Conosco</a></li>
                 </ul>
             </nav>
         </aside>
     </header>
-    <!--  /main desktop/  -->
-    <main>
-        <!--carrossel-->
-        <section id="carouselExampleIndicators" class="carousel slide image-fluid pag_sem_cotacoes">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/esportes_img/nba.jpg" class="d-block w-100 img_carrossel" alt="nba">
-                <a class="carrossel_titulo_container" href="../html/noticias_de_esportes/nba.html">
-                    <h2 class="titulo_carrossel">NBA Inicia a Temporada com Grande Expectativa</h2>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/empregos_img/Cutrale2.jpg" class="d-block image-fluid w-100 img_carrossel" alt="empresa cutrale">
-                <a class="carrossel_titulo_container" href="../html/noticias_de_empregos/cutrale.html">
-                    <h2 class="titulo_carrossel">Cutrale Abre Vagas para Operador</h2>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/empregos_img/lupo.png" class="d-block w-100 img_carrossel" alt="logo e frase de efeito da empresa lupo">
-                <a class="carrossel_titulo_container" href="#">
-                    <h2 class="titulo_carrossel">Lupo Abre Vagas para Suporte TI</h2>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/empregos._img/FATEC.jpg" class="d-block w-100 img_carrossel" alt="fachada fatec matao luiz marchesan">
-                <a class="carrossel_titulo_container" href="#">
-                    <h2 class="titulo_carrossel">Fatec Matão Luiz Marchesan é PHoda</h2>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/empregos_img/marchesan.jpg" class="d-block w-100 img_carrossel" alt="espaço de execução">
-                <a class="carrossel_titulo_container" href="#">
-                    <h2 class="titulo_carrossel"> Abre Vagas para Mecânico de Caminhão</h2>
-                </a>
-            </div>
-            </div>
-            <button id="carousel_control_prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span id="carousel_prev_icon" class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button id="carousel_control_next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span id="carousel_next_icon" class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <!--artigos-->
-        <div id="artigos">
-            <article class="noticia_main">
-                <img src="../img/esportes_img/botafogo.jpg" alt="jogadores do botafogo se abraçando">
-                <a href="../html/noticias_de_esportes/corinthians.html">
-                    <h4>"Vexame Corinthiano"</h4>
-                    <p class="descricao_da_noticia">Embalado, Botafogo atroplea o Corinthians no Nilton Santos.</p>
-                </a>
-                <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
-            </article>
-            <article class="noticia_main">
-                <img src="../img/economia_img/reinounido_notcia.jpg" alt="pessoas do Reino Unido caminhando em frente à Tower Bridge">
-                <a href="">
-                    <h4>Economia do Reino Unido Cresce no 1º Trimestre, mas Queda em Março Ressalta Fragilidade</h4>
-                    <p class="descricao_da_noticia">A economia da no Reino Unido cresceu 0,1% nos primeiros três meses de 2023, mas uma queda inesperadamente acentuada de 0,3% em março destacou a fragilidade de sua recuperação.</p>
-                </a>
-                <p class="informacoes_da_noticia"></p>
-            </article>
-            <article class="noticia_main">
-                <img src="../img/esportes_img/lakers.jpg" alt="">
-                <a href="">
-                    <h4>Chance dos Lakers Avançarem Hoje</h4>
-                    <p class="descricao_da_noticia">Logo mais, em Los Angeles, o Lakers tem a sua grande chance de eliminar o Warriors e seguir firme para as finais da Conferência Oeste contra o Denver Nuggets, que derrotou o Suns nesta quinta-feira</p>
-                </a>
-                <p class="informacoes_da_noticia"></p>
-            </article>
-            <a class="add" href="#">
-                <img src="../img/index_img/add.jpg" alt="">
-            </a>
-            <article class="noticia_main">
-                <img src="../img/empregos_img/baldan.jpg" alt="upperview da empresa baldan em matao">
-                <a href="">
-                    <h4>Baldan Surpreende</h4>
-                    <p class="descricao_da_noticia">Baldan apresenta novo posicionamento de marca e disponibiliza lançamentos durante a 28ª Agrishow</p>
-                </a>
-                <p class="informacoes_da_noticia"></p>
-            </article>
-            <article class="noticia_main">
-                <img src="" alt="">
-                <a href="">
-                    <h4></h4>
-                    <p class="descricao_da_noticia"></p>
-                </a>
-                <p class="informacoes_da_noticia"></p>
-            </article>
-            <article class="noticia_main">
-                <img src="" alt="">
-                <a href="">
-                    <h4></h4>
-                    <p class="descricao_da_noticia"></p>
-                </a>
-                <p class="informacoes_da_noticia"></p>
-            </article>
-        </div>
+    <!--main da pagina de noticia aberta-->
+    <main id="main_da_noticia_aberta">
+        <article>
+            <h1>Baldan Procura Gerente de Marketing</h1>
+            <h2>Com foco em inovação e qualidade, Baldan oferece vagas para profissionais de design e impulsiona o mercado de trabalho no setor agrícola</h2>
+            <h3 class="informacoes_da_noticia_aberta">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</h3>
+            <p>
+                A Baldan, empresa reconhecida no segmento de máquinas agrícolas, está anunciando a abertura de vagas no setor de design, oferecendo oportunidades de emprego para profissionais talentosos e apaixonados por inovação. Com o compromisso de desenvolver soluções eficientes e de alta qualidade para o setor agrícola, a Baldan está impulsionando o mercado de trabalho no segmento, trazendo novas oportunidades para o setor de design.
+
+                A empresa busca por profissionais qualificados e criativos para atuar em projetos de design de máquinas agrícolas, desenvolvimento de novos produtos, criação de interfaces digitais, entre outras áreas relacionadas ao design industrial. A Baldan valoriza a excelência e o pensamento inovador, buscando constantemente aprimorar seus produtos e processos.
+            </p>
+            <img src="../../img/empregos_img/designer.jpg" alt="profissional de design trabalhando em tablet">
+            <p>
+                Com uma história de sucesso e reconhecimento no mercado agrícola, a Baldan oferece um ambiente de trabalho estimulante e oportunidades de crescimento profissional. A empresa investe em capacitação e desenvolvimento de seus colaboradores, visando o aprimoramento de suas habilidades e conhecimentos no setor.
+
+                A Baldan é reconhecida por sua cultura de inovação e qualidade, buscando sempre oferecer soluções que atendam às necessidades dos agricultores e contribuam para o aumento da produtividade no campo. Fazer parte da equipe Baldan significa fazer parte de uma empresa que está na vanguarda da tecnologia agrícola.
+            </p>
+            <p>
+                Os interessados em fazer parte da equipe de design da Baldan podem ficar atentos às oportunidades divulgadas no site oficial da empresa e em plataformas de recrutamento. A Baldan valoriza a diversidade e a inclusão, buscando candidatos com diferentes formações e experiências.
+
+                Se você é apaixonado por design e está em busca de uma carreira no setor agrícola, essa é uma excelente oportunidade para se juntar a uma empresa renomada e contribuir com soluções inovadoras para o campo.
+            </p>
+        </article>
+        <div id="add_1_noticia_aberta"><a href="#"><img class="add_da_noticia_aberta" src="../../img/esportes_img/add_da_pag_aberta.svg" alt="add"></a></div>
+        <div id="add_2_noticia_aberta"><a href="#"><img class="add_da_noticia_aberta" src="../../img/esportes_img/add_da_pag_aberta.svg" alt="add"></a></div>
+        <div id="add_mobile"><a href="#"><img id="img_add_mobile" src="../../img/esportes_img/add_da_pag_aberta_mobile.svg" alt="add"></a></div>
     </main>
     <!--  /footer/  -->
     <footer>
@@ -235,7 +155,7 @@
                 </a>
             </li>
             <li>
-                <a class="footer_social_media" href="../html/sobre_nos.html">
+                <a class="footer_social_media" href="../sobre_nos.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>

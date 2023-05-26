@@ -217,8 +217,8 @@ main h1 {
 /*carrossel*/
 .carousel {
     min-height: auto;
-    max-height: 75vh;
-    width: 75%;
+    max-height: 85vh;
+    width: 97%;
     margin: 0 auto 1vw auto;
 }
 
@@ -230,7 +230,7 @@ main h1 {
 .img_carrossel {
     width: max-content;
     min-height: auto;
-    max-height: 75vh;
+    max-height: 85vh;
 }
 
 #carousel_control_next, #carousel_control_prev {

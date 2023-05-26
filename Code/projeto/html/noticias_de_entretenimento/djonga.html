@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GWI Esportes</title>
+    <title>GWI Entretenimento</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!--  header  -->
-    <header id="pag_esportes">
+    <header id="pag_entretenimento">
         <!--logo-->
-        <a id="container_da_logo" href="../html/index.html">
+        <a id="container_da_logo" href="../../html/index.html">
             <!--desktop-->
             <img id="logo_header_desktop" src="../../img/esportes_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
             <!--mobile-->
@@ -22,13 +22,14 @@
             <ul class="links_paginas_categorias">
                 <li><a class="link_header_empregos" href="../empregos.html">Empregos</a></li>
                 <li><a class="link_header_educacao" href="../educacao.html">Educação</a></li>
-                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_esportes" href="../esportes.html">Esportes</a></li>
-                <li><a class="link_header_entretenimento" href="../entretenimento.html">Entretenimento</a></li>
+                <li><a class="link_header_esportes" href="../esportes.html">Esportes</a></li>
+                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_entretenimento" href="../entretenimento.html">Entretenimento</a></li>
                 <li><a class="link_header_economia" href="../economia.html">Economia</a></li>
             </ul>
         </nav>
         <!--buttons-->
         <div id="container_header_buttons">
+            <!--search-->
             <a id="search_container">
                 <button id="search_button" class="btn" type="button" data-bs-toggle="collapse" href="#search_bar" aria-expanded="false" aria-controls="search_bar">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -39,11 +40,44 @@
                     <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="addon-wrapping">
                 </div>
             </a>
-            <a id="botao_de_login" href="#login#">
-                <button>
+            <!--login-->
+            <a id="botao_de_login" >
+                <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Senha</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" id="entrar" class="text-center btn btn-primary">Entrar</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" id="botao_de_login">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </button>
+            </a>
+            <!--home-->
+            <a href="../index.html">
+                <button id="botao_home">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                     </svg>
                 </button>
             </a>
@@ -67,7 +101,7 @@
                     <li><a class="link_header_economia" href="../economia.html">Economia</a></li>
                     <li><a class="link_do_aside" href="../index.html">Home</a></li>
                     <li><a class="link_do_aside" href="#">Login</a></li>
-                    <li><a class="link_do_aside" href="../html/sobre_nos.html">Sobre Nós</a></li>
+                    <li><a class="link_do_aside" href="../sobre_nos.html">Sobre Nós</a></li>
                     <li><a class="link_do_aside" href="#">Fale Conosco</a></li>
                 </ul>
             </nav>
@@ -76,28 +110,24 @@
     <!--main da pagina de noticia aberta-->
     <main id="main_da_noticia_aberta">
         <article>
-            <h1>Vexame Corinthiano</h1>
-            <h2>Time de Luís Castro devolve placar sofrido na estreia do Brasileirão de 2022 com boa atuação e segue na liderança com justiça</h2>
+            <h1>Djonga: O Rapper Mineiro Conquista o País com sua Música Autêntica e Letras Impactantes</h1>
+            <h2>Djonga se destaca no cenário musical brasileiro e promove reflexões através de suas composições</h2>
             <h3 class="informacoes_da_noticia_aberta">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</h3>
             <p>
-                São Paulo, 16 de maio de 2023 - O Corinthians enfrentou uma noite de desafios e frustrações ao ser derrotado pelo Botafogo em um confronto inesquecível realizado no Estádio Nilton Santos. O resultado surpreendeu os fãs do futebol e deixou a torcida corintiana desolada.
+                Djonga, o talentoso rapper mineiro, tem conquistado o coração do público brasileiro com sua música autêntica e letras impactantes. Com uma carreira ascendente, ele vem se destacando no cenário musical do país, trazendo sua mensagem poderosa e promovendo reflexões sobre questões sociais e políticas.
 
-                Desde o apito inicial, a partida prometia ser intensa, com ambos os times buscando a vitória. O Corinthians, tradicionalmente um clube de grande expressão e sucesso, entrou em campo com a confiança de seus torcedores, esperando sair com os três pontos. No entanto, o Botafogo, buscando uma reviravolta em sua trajetória recente, mostrou-se resiliente e determinado a sair vitorioso.
+                Nascido e criado em Belo Horizonte, Djonga vem ganhando cada vez mais reconhecimento pelo seu estilo único e sua forma de expressão. Suas composições abordam temas como desigualdade, racismo, violência e outros problemas enfrentados pela sociedade. Com rimas afiadas e uma poesia crua, ele cria um diálogo com seu público, levando-os a refletir sobre as questões mais urgentes do país.
             </p>
-            <img src="../../img/esportes_img/botafogo.jpg" alt="jogadores do botafogo se abraçando após vitória">
+            <img src="../../img/entretenimento_img/djonga.png" alt="rapper djonga">
             <p>
-                Durante os primeiros minutos, as equipes se estudaram, tentando encontrar brechas na defesa adversária. O Corinthians demonstrou sua força ofensiva, com jogadas bem trabalhadas e investidas perigosas em direção ao gol do Botafogo. No entanto, a defesa do time carioca mostrou-se sólida, bloqueando as tentativas corintianas.
+                Djonga também é conhecido por suas performances cativantes e sua presença de palco marcante. Seus shows são verdadeiros espetáculos, nos quais ele transmite sua energia e paixão pela música diretamente para o público. Com uma base de fãs fiel e em constante crescimento, ele tem lotado casas de shows e festivais por onde passa.
 
-                Foi então que, em um rápido contra-ataque, o Botafogo surpreendeu a equipe do Corinthians com um gol de pura habilidade e precisão. O estádio ficou em silêncio, enquanto os jogadores corintianos tentavam assimilar o golpe e se reorganizar em campo.
-
-                A partir desse momento, a pressão aumentou para o Corinthians. O time paulista intensificou seus esforços para buscar o empate, mas o Botafogo se mostrava eficiente na defesa, com um sistema tático bem estruturado. Apesar das tentativas corintianas, o goleiro do Botafogo se destacou com defesas impressionantes, frustrando as investidas do adversário.
+                Além de seu sucesso musical, Djonga também é um ativista e defensor dos direitos humanos. Ele utiliza sua voz e influência para promover debates e conscientizar sobre as desigualdades sociais, a importância da representatividade e a luta por igualdade racial. Seu engajamento vai além da música, sendo uma fonte de inspiração para muitos jovens que encontram em suas letras uma forma de expressão e empoderamento.
             </p>
             <p>
-                Com o passar do tempo, o nervosismo tomou conta do Corinthians, que passou a cometer erros e desperdiçar oportunidades claras de gol. A torcida, em desespero, não conseguia acreditar no que estava acontecendo. O Botafogo, por sua vez, soube se aproveitar dessa instabilidade e, em um contra-ataque mortal nos minutos finais, marcou o segundo gol, selando a vitória e confirmando a surpreendente derrota do Corinthians.
+                Com seu talento inegável, Djonga se tornou uma das vozes mais relevantes do rap nacional, conquistando prêmios e reconhecimentos ao longo de sua carreira. Sua autenticidade e originalidade têm cativado não apenas os fãs de rap, mas também pessoas de diferentes gêneros musicais, tornando-o um dos artistas mais influentes da atualidade.
 
-                Após o apito final, os jogadores do Botafogo comemoraram a vitória com entusiasmo, reconhecendo a importância desse resultado para a equipe. Já o Corinthians, em meio a um misto de decepção e frustração, voltará aos treinos e buscará corrigir os erros para reencontrar o caminho das vitórias nas próximas partidas.
-
-                Essa derrota inesperada certamente terá repercussões no cenário do futebol brasileiro, com questionamentos e análises sobre o desempenho do Corinthians e a força do Botafogo. Resta agora aos corintianos levantarem a cabeça, aprender com os erros e trabalhar incansavelmente em busca de uma retomada triunfante em campo.
+                Djonga é um exemplo de como a música pode ser uma ferramenta poderosa para promover mudanças e despertar consciências. Seu compromisso com a arte e sua mensagem impactante continuam a conquistar novos ouvintes, mostrando que a música tem o poder de transformar e inspirar. O rapper mineiro está escrevendo sua história e deixando sua marca indelével no cenário musical brasileiro.
             </p>
         </article>
         <div id="add_1_noticia_aberta"><a href="#"><img class="add_da_noticia_aberta" src="../../img/esportes_img/add_da_pag_aberta.svg" alt="add"></a></div>
@@ -125,7 +155,7 @@
                 </a>
             </li>
             <li>
-                <a class="footer_social_media" href="../html/sobre_nos.html">
+                <a class="footer_social_media" href="../sobre_nos.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -134,13 +164,41 @@
                 </a>
             </li>
             <li>
-                <a class="footer_social_media" href="#">
+                <a class="footer_social_media" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
                     </svg>
                     <p>Fale Conosco</p>
                 </a>
+                <!--fale conosco modal-->
+                <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contactModalLabel">Fale Conosco</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
         <!--copyright-->

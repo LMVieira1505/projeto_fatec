@@ -13,22 +13,23 @@
         <!--logo-->
         <a id="container_da_logo" href="../../html/index.html">
             <!--desktop-->
-            <img id="logo_header_desktop" src="../../img/empregos_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_desktop" src="../../img/esportes_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
             <!--mobile-->
-            <img id="logo_header_mobile" src="../../img/empregos_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_mobile" src="../../img/esportes_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
         </a>
         <!--nav-->
         <nav id="container_das_categorias">
             <ul class="links_paginas_categorias">
-                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_empregos" href="empregos.html">Empregos</a></li>
-                <li><a class="link_header_educacao" href="educacao.html">Educação</a></li>
-                <li><a class="link_header_esportes" href="esportes.html">Esportes</a></li>
-                <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>
-                <li><a class="link_header_economia" href="economia.html">Economia</a></li>
+                <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_empregos" href="../empregos.html">Empregos</a></li>
+                <li><a class="link_header_educacao" href="../educacao.html">Educação</a></li>
+                <li><a class="link_header_esportes" href="../esportes.html">Esportes</a></li>
+                <li><a class="link_header_entretenimento" href="../entretenimento.html">Entretenimento</a></li>
+                <li><a class="link_header_economia" href="../economia.html">Economia</a></li>
             </ul>
         </nav>
         <!--buttons-->
         <div id="container_header_buttons">
+            <!--search-->
             <a id="search_container">
                 <button id="search_button" class="btn" type="button" data-bs-toggle="collapse" href="#search_bar" aria-expanded="false" aria-controls="search_bar">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -39,11 +40,44 @@
                     <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="addon-wrapping">
                 </div>
             </a>
-            <a id="botao_de_login" href="#login#">
-                <button>
+            <!--login-->
+            <a id="botao_de_login" >
+                <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Senha</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" id="entrar" class="text-center btn btn-primary">Entrar</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" id="botao_de_login">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </button>
+            </a>
+            <!--home-->
+            <a href="../index.html">
+                <button id="botao_home">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                     </svg>
                 </button>
             </a>
@@ -76,26 +110,29 @@
     <!--main da pagina de noticia aberta-->
     <main id="main_da_noticia_aberta">
         <article>
-            <h1>Cutrale Abre Vagas para Mecânico de Caminhão, Impulsionando o Setor de Transporte</h1>
-            <h2>Cutrale fortalece sua equipe técnica ao abrir vagas para mecânico de caminhão</h2>
-            <h3 class="informacoes_da_noticia_aberta">Por Eduardo Camilo — São Paulo 16/05/2023 10h00 Atualizado há 2 horas</h3>
+            <h1>Ambev Expande Produção e Abre Vagas </h1>
+            <h2>Com o aumento da demanda, Ambev oferece vagas em sua fábrica de cerveja e impulsiona o mercado de trabalho no setor</h2>
+            <h3 class="informacoes_da_noticia_aberta">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</h3>
             <p>
-                A renomada empresa Cutrale, líder no setor de produção e distribuição de suco de laranja, está anunciando a abertura de vagas para mecânicos de caminhão. Essa iniciativa promissora visa fortalecer o setor de transporte da empresa, proporcionando oportunidades de emprego e impulsionando a economia local.
+                A Ambev, uma das maiores empresas do setor de bebidas, está expandindo sua produção de cerveja e abrindo novas oportunidades de emprego em sua fábrica. Com o crescimento da demanda e o sucesso de suas marcas, a Ambev está impulsionando o mercado de trabalho na indústria cervejeira, oferecendo vagas em diferentes áreas.
 
-                Com uma extensa frota de caminhões utilizada para o transporte de suas mercadorias, a Cutrale reconhece a importância de contar com profissionais qualificados para a manutenção e reparo desses veículos. Os mecânicos de caminhão desempenham um papel crucial na garantia da eficiência operacional e da segurança dos transportes.
+                A fábrica de cerveja da Ambev está em busca de profissionais qualificados para atuar em posições como produção, logística, controle de qualidade, manutenção, engenharia de processos e muito mais. A empresa valoriza a dedicação, a paixão pela indústria e o comprometimento com a excelência.
             </p>
-            <img src="../../img/empregos_img/Cutrale2.jpg" alt="Vista das empresa Cutrale">
+            <img src="../../img/empregos_img/cerveja.jpg" alt="tonéis de cerveja de fábrica da AMBEV">
             <p>
-                As vagas estão disponíveis para mecânicos experientes e também para aqueles que desejam ingressar na área. A empresa valoriza o conhecimento técnico, a capacidade de diagnosticar e solucionar problemas mecânicos, assim como o comprometimento com a qualidade e a segurança no trabalho. Além disso, são valorizadas habilidades como trabalho em equipe e organização.
+                Com um ambiente de trabalho dinâmico e colaborativo, a Ambev oferece oportunidades de crescimento e desenvolvimento profissional, além de benefícios atrativos para seus colaboradores. A empresa investe em treinamentos e programas de capacitação, buscando aprimorar as habilidades e conhecimentos de seus funcionários.
 
-                Os selecionados para as vagas terão a oportunidade de trabalhar em um ambiente dinâmico e desafiador, com acesso a tecnologias modernas e treinamentos contínuos. A Cutrale investe no desenvolvimento de seus funcionários, oferecendo oportunidades de crescimento profissional e reconhecimento dos talentos.
-
-                Os interessados em se candidatar às vagas de mecânico de caminhão na Cutrale podem acessar o site oficial da empresa, onde encontrarão informações detalhadas sobre os requisitos e o processo de seleção. O currículo pode ser enviado através do sistema online disponibilizado pela empresa, simplificando o processo de inscrição.
+                A Ambev é conhecida por sua cultura de inovação e sustentabilidade, buscando constantemente melhorias nos processos produtivos e na redução do impacto ambiental. Fazer parte da equipe da Ambev significa contribuir para uma empresa que está em constante evolução e se adaptando às demandas do mercado.
             </p>
-            
+            <p>
+                Os interessados em fazer parte dessa equipe cervejeira de sucesso podem ficar atentos às oportunidades divulgadas no site oficial da Ambev e em plataformas de recrutamento. A empresa valoriza a diversidade e a inclusão, buscando candidatos com diferentes experiências e formações.
+
+                Se você é apaixonado pelo mundo cervejeiro e está em busca de uma carreira na indústria de bebidas, essa é uma excelente oportunidade para se juntar a uma empresa líder e influente no mercado.
+            </p>
         </article>
         <div id="add_1_noticia_aberta"><a href="#"><img class="add_da_noticia_aberta" src="../../img/esportes_img/add_da_pag_aberta.svg" alt="add"></a></div>
         <div id="add_2_noticia_aberta"><a href="#"><img class="add_da_noticia_aberta" src="../../img/esportes_img/add_da_pag_aberta.svg" alt="add"></a></div>
+        <div id="add_mobile"><a href="#"><img id="img_add_mobile" src="../../img/esportes_img/add_da_pag_aberta_mobile.svg" alt="add"></a></div>
     </main>
     <!--  /footer/  -->
     <footer>
@@ -118,7 +155,7 @@
                 </a>
             </li>
             <li>
-                <a class="footer_social_media" href="../html/sobre_nos.html">
+                <a class="footer_social_media" href="../sobre_nos.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -127,13 +164,41 @@
                 </a>
             </li>
             <li>
-                <a class="footer_social_media" href="#">
+                <a class="footer_social_media" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
                         <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                         <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
                     </svg>
                     <p>Fale Conosco</p>
                 </a>
+                <!--fale conosco modal-->
+                <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contactModalLabel">Fale Conosco</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
         <!--copyright-->
