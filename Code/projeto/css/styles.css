@@ -198,6 +198,11 @@ header button {
     width: max-content;
     color: #fcffff;
 }
+#enviar{
+    background-color: #1D4988;
+    width: max-content;
+    color: #fcffff;
+}
 .modal-backdrop {
     z-index: 9;
 }
