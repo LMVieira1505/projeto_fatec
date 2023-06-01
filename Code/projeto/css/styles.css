@@ -185,7 +185,9 @@ header button {
     margin-top: 17vh;
 }
 #entrar{
+   background-color: #1D4988;
     width: max-content;
+    color: #fcffff;
 }
 .modal-backdrop {
     z-index: 9;
