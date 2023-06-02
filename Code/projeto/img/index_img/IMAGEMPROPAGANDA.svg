@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="IMAGEMPROPAGANDA.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76095916"
+     inkscape:cx="396.86755"
+     inkscape:cy="270.71098"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="220.774"
+       y="332.47514"
+       width="101.18808"
+       height="155.06745"
+       id="rect2363" />
+    <rect
+       x="161.63811"
+       y="185.29247"
+       width="505.94042"
+       height="115.64353"
+       id="rect2085" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.890196;stroke:none;stroke-width:0.353999;stroke-opacity:1"
+       id="rect1969"
+       width="112.30618"
+       height="4.1723657"
+       x="35.812805"
+       y="36.160503" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.890196;stroke:none;stroke-width:0.353999;stroke-opacity:1"
+       id="rect1971"
+       width="140.12195"
+       height="26.424984"
+       x="39.289776"
+       y="36.508202" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:0.890196;stroke:none;stroke-width:0.353999;stroke-opacity:1"
+       id="rect1973"
+       width="149.50977"
+       height="53.545361"
+       x="27.120377"
+       y="20.166435" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.890196;stroke:none;stroke-width:0.353999;stroke-opacity:1"
+       id="rect2027"
+       width="149.16208"
+       height="49.720692"
+       x="35.117413"
+       y="41.028263" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.890196;stroke:none;stroke-width:1.75825;stroke-opacity:1"
+       d="m 132.72723,249.02782 v -93.96037 h 281.88109 281.8811 v 93.96037 93.96036 H 414.60832 132.72723 Z"
+       id="path2029"
+       transform="scale(0.26458333)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.28597091,0,0,0.50413645,-5.2992805,-45.755209)"
+       id="text2083"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:66.6667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;shape-inside:url(#rect2085);opacity:1;fill:#f9f9f9;fill-opacity:0.890196;stroke:none;stroke-width:1.33795;stroke-opacity:1"><tspan
+         x="161.63867"
+         y="245.3433"
+         id="tspan2383">PROPAGANDA</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2361"
+       style="fill:#f9f9f9;-inkscape-font-specification:'Arial Bold';font-family:Arial;font-size:76.42666667px;font-weight:bold;stroke-width:1.33795276;stroke:none;fill-opacity:0.89019608;stroke-opacity:1;opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;white-space:pre;shape-inside:url(#rect2363)" />
+  </g>
+</svg>
