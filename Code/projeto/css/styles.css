@@ -481,11 +481,6 @@ main h1 {
     font-size: 1.3vw;
 }
 
-#logo_mais_titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 #logo_do_sobre_nos {
     height: auto;
     width: 100%;
@@ -493,7 +488,7 @@ main h1 {
 
 #titulo_do_sobre_nos {
     text-align: center;
-    margin: auto;
+    margin: 3vh auto;
 }
 
 /*section sobre os membros*/
@@ -797,14 +792,16 @@ footer ul li p {
     }
 
     /*artigos*/
-    #artigos {
+    .artigos {
         display: block;
         padding: 1%;
+        background-color: #d2d0d0;
     }
 
     .noticia_main {
         display: block;
         margin-bottom: 1vh;
+        background-color: #F7F7F7;
     }
 
     .noticia_main:hover {
