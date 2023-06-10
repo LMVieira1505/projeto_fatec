@@ -29,7 +29,7 @@
             </ul>
         </nav>
         <!--buttons-->
-        <div id="container_header_buttons">
+        <div id="container_header_buttons" class="botao_header">
             <!--search-->
             <a id="search_container">
                 <button id="search_button" class="btn" type="button" data-bs-toggle="collapse" href="#search_bar" aria-expanded="false" aria-controls="search_bar">
@@ -42,41 +42,41 @@
                 </div>
             </a>
             <!--login-->
-            <a id="botao_de_login" >
+            <a>
                 <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="email" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="mb-3">
-                              <label for="password" class="form-label">Senha</label>
-                              <input type="password" class="form-control" id="password">
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <button type="submit" id="entrar" class="text-center btn">Entrar</button>
+                                </form>
                             </div>
-                            <button type="submit" id="entrar" class="text-center btn">Entrar</button>
-                          </form>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" id="botao_de_login">
+                </div>
+                <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </button>
             </a>
-            <!--home-->
-            <a href="../html/index_dark.html">
-                <button id="botao_home">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+            <!--dark-->
+            <a class="botao_header" href="../html/index_dark.html">
+                <button id="botao_dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
                         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
                         <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
                     </svg>
@@ -101,9 +101,17 @@
                     <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>                        
                     <li><a class="link_header_economia" href="economia.html">Economia</a></li>
                     <li><a class="link_do_aside" href="../html/index.html">Home</a></li>
-                    <li><a class="link_do_aside" href="#">Login</a></li>
+                    <li>
+                        <button id="fechar_modal" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="link_do_aside" href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                        </button>
+                    </li>
                     <li><a class="link_do_aside" href="../html/sobre_nos.html">Sobre Nós</a></li>
-                    <li><a class="link_do_aside" href="#">Fale Conosco</a></li>
+                    <li>
+                        <button id="fechar_modal" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="link_do_aside" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Fale Conosco</a>
+                        </button>
+                    </li>
                     <li id="modo_noturno_container">
                         <p class="link_do_aside">Tema</p>
                         <div id="switch_container">
@@ -129,41 +137,80 @@
         <section id="section_cotacoes">
             <ul id="container_cotacoes">
                 <li id="cotacao_item1" class="cotacao_item">
-                    <p>Dólar R$4,95</p>
+                    <p>Dólar Americano R$4,92</p>
                 </li>
                 <li id="cotacao_item2" class="cotacao_item">
-                    <p>Euro R$5,39</p>
+                    <p>Euro R$5,31</p>
                 </li>
                 <li id="cotacao_item3" class="cotacao_item">
-                    <p>Ouro R$321,61</p>
+                    <p>Iene Japônes R$0,035</p>
                 </li>
                 <li id="cotacao_item4" class="cotacao_item">
-                    <p>Bitcoin R$131.720,06</p>
+                    <p>Libra Esterlina R$6,18</p>
+                </li>
+                <li id="cotacao_item1" class="cotacao_item">
+                    <p>Franco Suíço R$5,47</p>
                 </li>
             </ul>
+        </section>
+        <!--cotações mobile-->
+        <section id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div id="cotacao_mobile_inner" class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="cotacao_mobile">Dólar Americano R$4,92</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="cotacao_mobile">Euro R$5,31</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="cotacao_mobile">Iene Japônes R$0,035</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="cotacao_mobile">Libra Esterlina R$6,18</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="cotacao_mobile">Franco Suíço R$5,47</p>
+                </div>
+            </div>
+            <button id="cotacao_carousel_control_prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="cotacao_carousel_control_next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
         <!--carrossel-->
         <section id="container_carrossel_e_adds">
             <div id="add_carrossel_1" class="container_add">
                 <a class="carrossel_add" href="#">
-                    <img src="../img/index_img/IMAGEMPROPAGANDAvertical.svg">
+                    <img src="../img/index_img/add_carrossel_vetor.svg">
                 </a>
             </div>
             <section id="carouselExampleIndicators" class="carousel slide image-fluid">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/economia_img/programmers.jpg" class="d-block w-100 img_carrossel" alt="logo da empresa programmers">
-                    <a class="carousel-caption" href="../html/noticias_de_economia/programers.html">
-                        <h2 class="titulo_carrossel">Em Crise? Programmers Declara Falência</h2>
-                    </a>
-                </div>
+                    <div class="carousel-item active">
+                        <img src="../img/economia_img/programmers.jpg" class="d-block w-100 img_carrossel" alt="logo da empresa programmers">
+                        <a class="carousel-caption" href="../html/noticias_de_economia/programers.html">
+                            <h2 class="titulo_carrossel">Em Crise? Programmers Declara Falência</h2>
+                        </a>
+                    </div>
                 <div class="carousel-item">
                     <img src="../img/empregos_img/aviao.jpg" class="d-block w-100 img_carrossel" alt="foto de 3 aviões">
                     <a class="carousel-caption" href="../html/noticias_de_empregos/aviacao.html">
@@ -190,17 +237,25 @@
                 </div>
                 </div>
                 <button id="carousel_control_prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span id="carousel_prev_icon" class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <span id="carousel_prev_icon" class="carousel-control-prev-icon" aria-hidden="true">
+                        <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button id="carousel_control_next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span id="carousel_next_icon" class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <span id="carousel_next_icon" class="carousel-control-next-icon" aria-hidden="true">
+                        <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </section>
             <div id="add_carrossel_2" class="container_add">
                 <a class="carrossel_add" href="#">
-                    <img src="../img/index_img/IMAGEMPROPAGANDAvertical.svg">
+                    <img src="../img/index_img/add_carrossel_vetor.svg">
                 </a>
             </div>
         </section>
@@ -230,7 +285,21 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
             </article>
-            <a class="add" href="#"><img src="../img/index_img/propaganda_vetor.svg" alt="propaganda"></a>
+            <div class="add_container">
+                <a class="add" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
             <article class="noticia_main">
                 <img src="../img/economia_img/Exportacoes.jpg" alt="jogadores do botafogo se abraçando">
                 <a href="../html/noticias_de_esportes/corinthians.html">
@@ -279,7 +348,21 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
             </article>
-            <a class="add" href="#"><img src="../img/index_img/propaganda_vetor.svg" alt="propaganda"></a>
+            <div class="add_container">
+                <a class="add" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
             <article class="noticia_main">
                 <img src="../img/esportes_img/kart2.jpg" alt="">
                 <a href="">
@@ -328,7 +411,21 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
             </article>
-            <a class="add" href="#"><img src="../img/index_img/propaganda_vetor.svg" alt="propaganda"></a>
+            <div class="add_container">
+                <a class="add" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
             <article class="noticia_main">
                 <img src="../img/economia_img/investimentos.jpg" alt="upperview da empresa baldan em matao">
                 <a href="">
@@ -377,7 +474,21 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Ségio Reis — Rio de Janeiro 07/01/2023 04h00  Atualizado há 18 horas</p>
             </article>
-            <a class="add" href="#"><img src="../img/index_img/propaganda_vetor.svg" alt="propaganda"></a>
+            <div class="add_container">
+                <a class="add" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
             <article class="noticia_main">
                 <img src="../img/esportes_img/tenis.jpg" alt="">
                 <a href="">

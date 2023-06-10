@@ -152,6 +152,7 @@ header button {
     background-color: #EBEBEB;
 }
 
+/*search*/
 #search_container {
     display: flex;
 }
@@ -163,7 +164,7 @@ header button {
     border: 0;
 }
 
-#search_button:hover, button:hover {
+#search_button:hover, #botao_de_login:hover, #botao_dark:hover {
     border: 0.15vw solid #141414;
 }
 
@@ -181,22 +182,32 @@ header button {
 #search_bar {
     height: 2.5vw;
 }
+ /*login*/
 .modal{
     margin-top: 17vh;
 }
+
 #entrar{
    background-color: #1D4988;
     width: max-content;
     color: #fcffff;
 }
+
 #enviar{
     background-color: #1D4988;
     width: max-content;
     color: #fcffff;
 }
+
 .modal-backdrop {
     z-index: 9;
 }
+
+/*dar*/
+#botao_dark {
+    width: 2.4vw;
+}
+
 /*     main    */
 
 main{
@@ -211,6 +222,10 @@ main h1 {
 }
 
 /*cotações*/
+#carouselExampleFade {
+    display: none;
+}
+
 #section_cotacoes {
     border-bottom: 0.15vw dotted #1d4988;
     margin-bottom: 1vw;
@@ -282,6 +297,15 @@ main h1 {
     border-style: none;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel_control_icon {
+    width: 4vw;
+    color: #1d4988;
+}
+
 /*titulo do carrossel*/
 .titulo_carrossel {
     display: inline-block;
@@ -312,7 +336,7 @@ main h1 {
     grid-template-rows: max-content 10vh max-content;
     justify-content: space-around;
     row-gap: 1.3vw;
-    margin-bottom: 3vw;
+    padding-bottom: 3vw;
 }
 
 #artigos_index {
@@ -379,14 +403,11 @@ main h1 {
 
 /*add*/
 .add{
-    grid-column-start: 1;
-    grid-column-end: 4;
     text-decoration: none;
 }
 
 .add img {
     width: 100%;
-    height: 100%;
 }
 
 /*   pagina de noticia aberta   */
@@ -482,12 +503,13 @@ main h1 {
 
 #logo_do_sobre_nos {
     height: auto;
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 #titulo_do_sobre_nos {
     text-align: center;
-    margin: 3vh auto;
+    margin: 2vh auto;
 }
 
 /*section sobre os membros*/
@@ -500,12 +522,17 @@ main h1 {
     display: flex;
 }
 
-.descricao_dos_membros img {
+.foto_dev_desktop {
     width: 10%;
     height: 10%;
+    border-radius: 100%;
 }
 
-.descricao_dos_membros div {
+.foto_dev_mobile {
+    display: none;
+}
+
+.texto_dev {
     margin-left: 1vw;
 }
 
@@ -596,10 +623,15 @@ footer ul li p {
     box-shadow: 0px 0px 3px 3px #1414147f;
 }
 
+/*     tablet    */
+@media (max-width: 1200px) {
+    
+}
+
 /*     mobile     */
-@media (max-width:475px) {
+@media (max-width: 475px) {
     /*     header     */
-    #logo_header_desktop, #container_das_categorias, #botao_de_login, #botao_home {
+    #logo_header_desktop, #container_das_categorias, .botao_header {
         display: none;
     }
 
@@ -734,6 +766,11 @@ footer ul li p {
         color: #1d4988;
     }
 
+    #fechar_modal {
+        background-color: white;
+        padding: 0;
+    }
+
     /* modo noturno */
     #modo_noturno_container {
         display: flex;
@@ -783,19 +820,31 @@ footer ul li p {
     /*     main mobile     */
     /*cotacoes*/
     #section_cotacoes {
+        display: none;
+    }
+
+    #carouselExampleFade {
+        display: block;
         margin-top: 12vh;
+        row-gap: 1.5vw;
         border-bottom: 0.6vw dotted #1d4988;
     }
-    
-    #container_cotacoes {
-        flex-wrap: wrap;
-        row-gap: 1.5vw;
-        margin: 0 0 1.5vw;
-        padding: 0;
+
+    #carouselExampleFade p {
+        width: max-content;
+        margin: 0 auto 1.5vw;
+        padding: 0.5vw 1.5vw;
+        border-radius: 5px;
+        color: #F7F7F7;
+        background-color: #1d4988;
     }
-    
-    #cotacao_item4 {
-        display: none;
+
+    #carouselExampleFade button {
+        margin-bottom: 1.5vw;
+    }
+
+    #cotacao_carousel_control_prev, #cotacao_carousel_control_next {
+        border-style: none;
     }
 
     /*carrossel*/
@@ -815,11 +864,23 @@ footer ul li p {
         display: none;
     }
 
+    .carousel_control_icon {
+        width: 7vw;
+    }
+
     .pag_sem_cotacoes {
         margin-top: 12vh;
     }
 
     /*titulo do carrossel*/
+    #container_carrossel_e_adds {
+        display: block;
+    }
+
+    .container_add {
+        display: none;
+    }
+
     .carousel-caption {
         bottom: 0;
         right: 0;
@@ -874,8 +935,12 @@ footer ul li p {
     }
 
     /*add*/
-    .add {
-        margin-bottom: 2vh;
+    .add_container {
+        margin-bottom: 1vh;
+    }
+
+    .add_adicional {
+        display: none;
     }
 
     /*pagina aberta*/
@@ -937,20 +1002,13 @@ footer ul li p {
         margin: 0 1% 1%;
     }
 
-    #logo_mais_titulo {
-        display: flex;
-        flex-direction: column;
-    }
-
     #logo_do_sobre_nos {
-        order: 2;
-        width: 85%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
     }
 
     #titulo_do_sobre_nos {
-        order: 1;
-        margin-bottom: 1vw;
+        margin: 1vh;
     }
 
     #info_sobre_empresa {
@@ -964,10 +1022,32 @@ footer ul li p {
     /*sobre membros*/
     .titulo_da_section_sobre_nos {
         font-size: 8vw;
+        margin-bottom: 1vh;
     }
 
-    .descricao_dos_membros img {
-        width: 20%;
+    .foto_dev_desktop {
+        display: none;
+    }
+
+    .foto_e_nome_dev {
+        display: flex;
+        margin: 0;
+    }
+
+    .foto_dev_mobile {
+        display: block;
+        width: 30%;
+        border-radius: 100%;
+    }
+
+    .foto_e_nome_dev h2 {
+        font-size: 8vw;
+        margin: auto 5%;
+    }
+
+    .texto_dev p {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     /*sobre serviços*/
