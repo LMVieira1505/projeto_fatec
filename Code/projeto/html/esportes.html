@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <!--buttons-->
-        <div id="container_header_buttons">
+        <div id="container_header_buttons" class="botao_header">
             <!--search-->
             <a id="search_container">
                 <button id="search_button" class="btn" type="button" data-bs-toggle="collapse" href="#search_bar" aria-expanded="false" aria-controls="search_bar">
@@ -41,41 +41,41 @@
                 </div>
             </a>
             <!--login-->
-            <a id="botao_de_login" >
+            <a>
                 <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="email" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="mb-3">
-                              <label for="password" class="form-label">Senha</label>
-                              <input type="password" class="form-control" id="password">
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <button type="submit" id="entrar" class="text-center btn">Entrar</button>
+                                </form>
                             </div>
-                            <button type="submit" id="entrar" class="text-center btn ">Entrar</button>
-                          </form>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" id="botao_de_login">
+                </div>
+                <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </button>
             </a>
-            <!--home-->
-            <a href="../html/index.html">
-                <button id="botao_home">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+            <!--dark-->
+            <a class="botao_header" href="../html/index_dark.html">
+                <button id="botao_dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
                         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
                         <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
                     </svg>
@@ -84,11 +84,11 @@
         </div>
         <!--menu hamburger mobile-->
         <!--botão na home-->
-        <button id="menu_hamburger" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#barra_lateral" aria-controls="barra_lateral">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
+            <button id="menu_hamburger" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#barra_lateral" aria-controls="barra_lateral">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
         <!--barra lateral-->
         <aside id="barra_lateral" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" aria-labelledby="offcanvasWithBothOptionsLabel">
             <!--links das páginas na barra lateral-->
@@ -100,9 +100,32 @@
                     <li><a class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>                        
                     <li><a class="link_header_economia" href="economia.html">Economia</a></li>
                     <li><a class="link_do_aside" href="../html/index.html">Home</a></li>
-                    <li><a class="link_do_aside" href="#">Login</a></li>
+                    <li>
+                        <button id="fechar_modal" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="link_do_aside" href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                        </button>
+                    </li>
                     <li><a class="link_do_aside" href="../html/sobre_nos.html">Sobre Nós</a></li>
-                    <li><a class="link_do_aside" href="#">Fale Conosco</a></li>
+                    <li>
+                        <button id="fechar_modal" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="link_do_aside" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Fale Conosco</a>
+                        </button>
+                    </li>
+                    <li id="modo_noturno_container">
+                        <p class="link_do_aside">Tema</p>
+                        <div id="switch_container">
+                            <a id="link_dark_pag" href="../html/index_dark.html">
+                                <div id="switch">
+                                    <svg id="sun_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <svg id="moon_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                            </svg>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -157,11 +180,19 @@
                     </div>
                 </div>
                 <button id="carousel_control_prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span id="carousel_prev_icon" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span id="carousel_prev_icon" class="carousel-control-prev-icon" aria-hidden="true">
+                        <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                        </svg>
+                    </span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button id="carousel_control_next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span id="carousel_next_icon" class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span id="carousel_next_icon" class="carousel-control-next-icon" aria-hidden="true">
+                        <svg class="carousel_control_icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                    </span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </section>
@@ -197,7 +228,21 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
             </article>
-            <a class="add" href="#"><img src="../img/index_img/propaganda_vetor.svg" alt="propaganda"></a>
+            <div class="add_container">
+                <a class="add" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
+            <div class="add_container">
+                <a class="add add_adicional" href="#">
+                    <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
+                </a>
+            </div>
             <article class="noticia_main">
                 <img src="../img/esportes_img/muaythai.jpg" alt="upperview da empresa baldan em matao">
                 <a href="">
