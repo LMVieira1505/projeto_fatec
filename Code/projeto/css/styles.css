@@ -235,6 +235,7 @@ main h1 {
     margin-top: 7vw;
     display: flex;
     justify-content: space-around;
+    padding: 0;
     list-style: none;
 }
 
@@ -458,8 +459,8 @@ main h1 {
 #add_2_noticia_aberta {
     grid-column-start: 9;
     grid-column-end: 10;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
 }
 
 .add_da_noticia_aberta {
