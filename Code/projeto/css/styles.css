@@ -473,30 +473,39 @@ main h1 {
     display: none;
 }
 
-/*currículos*/
+/*cuuriculos*/
 #section_curriculos {
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
     border-bottom: 0.15vw dotted #1d4988;
-    padding-bottom: 2vh;
-    margin-bottom: 2vh;
 }
 
-.titulo_curriculos {
+#titulo_curriculos {
     color: #1d4988;
-    text-align: center;
-    margin-bottom: 2vh;
+    font-size: 2rem;
 }
 
-#accordionPanelsStayOpenExample {
+.container_curriculos {
     display: flex;
-    width: 90%;
-    column-gap: 3%;
-    margin-left: 5%;
+    width: 97%;
+    column-gap: 2%;
+    margin-left: 1.5%;
+}
+
+.curriculos_child {
+    width: 32%;
+    padding: 1%;
 }
 
 .accordion-item {
-    width: 50%;
     background-color: #ebebeb;
     border: 0;
+    padding: 0;
+}
+
+.accordion {
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fcffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fcffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-button {
@@ -504,23 +513,41 @@ main h1 {
     background-color: #1d4988;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-.accordion-button:not(.collapsed) {
-    color: #f7f7f7;
-    background-color: #1d4988;
-    box-shadow: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 .accordion-button.collapsed {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    justify-content: center;
+    border-radius: 5px
+}
+
+.accordion-button:not(.collapsed) {
+    justify-content: center;
+    color: #f7f7f7;
+    background-color: #1d4988;
+    box-shadow: none;
 }
 
 .accordion-button:focus {
-    border-color: #ebebeb;
     box-shadow: none;
+    border-color: none;
+}
+
+.accordion-header {
+    text-align: center;
+}
+
+.accordion-header p {
+    margin: 0 auto;
+}
+
+.accordion-header svg {
+    width: 5%;
+}
+
+.accordion-button::after {
+    margin-left: 0;
 }
 
 .accordion-body {
@@ -529,6 +556,12 @@ main h1 {
 
 .curriculo {
     width: 100%;
+    aspect-ratio: 397/529;
+}
+
+.curriculos_p {
+    color: #141414;
+    background-color: #fcffff;
 }
 
 /*titulo de seção*/
@@ -1055,14 +1088,18 @@ footer ul li p {
     }
 
     /*curriculos*/
-    #accordionPanelsStayOpenExample {
+    .container_curriculos {
         display: block;
-        width: 90%;
-        margin: 5% 5% 0;
+    }
+
+    .curriculos_child {
+        width: 100%;
+        text-align: center;
+        margin: 0;
     }
 
     .accordion-item {
-        
+        margin: 1.5vh 0;
     }
 
     /*     pagina sobre nós     */
