@@ -473,6 +473,65 @@ main h1 {
     display: none;
 }
 
+/*currículos*/
+#section_curriculos {
+    border-bottom: 0.15vw dotted #1d4988;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+}
+
+.titulo_curriculos {
+    color: #1d4988;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#accordionPanelsStayOpenExample {
+    display: flex;
+    width: 90%;
+    column-gap: 3%;
+    margin-left: 5%;
+}
+
+.accordion-item {
+    width: 50%;
+    background-color: #ebebeb;
+    border: 0;
+}
+
+.accordion-button {
+    color: #f7f7f7;
+    background-color: #1d4988;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f7f7f7;
+    background-color: #1d4988;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #ebebeb;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.curriculo {
+    width: 100%;
+}
+
 /*titulo de seção*/
 .titulo_de_secao {
     padding: 1vw 0;
