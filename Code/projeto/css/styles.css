@@ -504,19 +504,18 @@ main h1 {
     background-color: #1d4988;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.accordion-button:not(.collapsed) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 .accordion-button:not(.collapsed) {
     color: #f7f7f7;
     background-color: #1d4988;
     box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.accordion-button.collapsed {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .accordion-button:focus {
@@ -1053,6 +1052,17 @@ footer ul li p {
 
     #img_add_mobile {
         width: 100%;
+    }
+
+    /*curriculos*/
+    #accordionPanelsStayOpenExample {
+        display: block;
+        width: 90%;
+        margin: 5% 5% 0;
+    }
+
+    .accordion-item {
+        
     }
 
     /*     pagina sobre nós     */
