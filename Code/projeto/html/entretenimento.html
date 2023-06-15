@@ -13,9 +13,9 @@
         <!--logo-->
         <a id="container_da_logo" href="../html/index.html">
             <!--desktop-->
-            <img id="logo_header_desktop" src="../img/entretenimento_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_desktop" src="../img/index_img/logo_nova_vetor.svg" alt="logo escrito GWI NEWS">
             <!--mobile-->
-            <img id="logo_header_mobile" src="../img/entretenimento_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
+            <img id="logo_header_mobile" src="../img/index_img/logo_nova_vetor_vertical.svg" alt="logo escrito GWI NEWS">
         </a>
         <!--nav-->
         <nav id="container_das_categorias">
@@ -25,6 +25,17 @@
                 <li><a class="link_header_esportes" href="esportes.html">Esportes</a></li>
                 <li id="container_do_link_da_pagina_aberta"><a id="link_da_pagina_aberta" class="link_header_entretenimento" href="entretenimento.html">Entretenimento</a></li>
                 <li><a class="link_header_economia" href="economia.html">Economia</a></li>
+            </ul>
+        </nav>
+        <!--nav tablet-->
+        <nav id="container_das_categorias_tablet" class="dropdown">
+            <a class="btn link_header_entretenimento dropdown-toggle" href="../html/entretenimento.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Entretenimento</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item link_header_empregos" href="empregos.html">Empregos</a></li>
+                <li><a class="dropdown-item link_header_educacao" href="educacao.html">Educação</a></li>
+                <li><a class="dropdown-item link_header_esportes" href="esportes.html">Esportes</a></li>
+                <li><a class="dropdown-item link_header_economia" href="economia.html">Economia</a></li>
+                <li><a class="dropdown-item link_header_empregos" href="index.html">Home</a></li>
             </ul>
         </nav>
         <!--buttons-->
@@ -41,37 +52,35 @@
                 </div>
             </a>
             <!--login-->
-            <a>
-                <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="password" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="password">
-                                    </div>
-                                    <button type="submit" id="entrar" class="text-center btn">Entrar</button>
-                                </form>
-                            </div>
+            <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <button type="submit" id="entrar" class="text-center btn">Entrar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                </button>
-            </a>
+            </div>
+            <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+            </button>
             <!--dark-->
             <a class="botao_header" href="../html/index_dark.html">
                 <button id="botao_dark">
@@ -228,17 +237,17 @@
                 </a>
                 <p class="informacoes_da_noticia">Por Sergio Santana — Rio de Janeiro 12/05/2023 04h00  Atualizado há 6 horas</p>
             </article>
-            <div class="add_container">
+            <div id="add1" class="add_container">
                 <a class="add" href="#">
                     <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
                 </a>
             </div>
-            <div class="add_container">
+            <div id="add2" class="add_container">
                 <a class="add add_adicional" href="#">
                     <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
                 </a>
             </div>
-            <div class="add_container">
+            <div class="add_container add3">
                 <a class="add add_adicional" href="#">
                     <img src="../img/index_img/add_artigos_vetor.svg" alt="propaganda">
                 </a>
@@ -296,7 +305,7 @@
                 </li>
             </ul>
             <!--logo do footer-->
-            <div class="col-md-4">
+            <div id="container_logo_do_footer" class="col-md-4">
                 <a id="link_logo_do_footer" href="index.html">
                     <img id="logo_do_footer" src="../img/index_img/logo_nova_vetor_footer.svg">
                 </a>
