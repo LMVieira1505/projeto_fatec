@@ -13,11 +13,11 @@ header {
     height: 6vw;
     justify-content: space-between;
     background-color: #141414;
-    border-bottom: 0.5vw solid #137AAD;
+    border-bottom: 0.5vw solid #4285e3ff;
 }
 
 #pag_empregos .link_header_empregos {
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     color: #f7f7f7;
 }
 
@@ -101,11 +101,11 @@ header a:hover {
 }
 
 .link_header_empregos {
-    color: #137AAD;
+    color: #4285e3ff;
 }
 
 .link_header_empregos:hover {
-    background-color: #137AAD;
+    background-color: #4285e3ff;
 }
 
 .link_header_educacao {
@@ -223,7 +223,7 @@ header button {
 }
 
 #entrar{
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     width: max-content;
     height: 2rem;
     padding: 0 0.5rem;
@@ -231,7 +231,7 @@ header button {
 }
 
 #enviar{
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     width: max-content;
     color: #f7f7f7;
 }
@@ -266,7 +266,7 @@ main h1 {
 }
 
 #section_cotacoes {
-    border-bottom: 0.15vw dotted #137AAD;
+    border-bottom: 0.15vw dotted #4285e3ff;
     margin-bottom: 1vw;
 }
 
@@ -280,7 +280,7 @@ main h1 {
 
 .cotacao_item {
     color: #f7f7f7;
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     border-radius: 5px;
 }
 
@@ -343,7 +343,7 @@ main h1 {
 
 .carousel_control_icon {
     width: 4vw;
-    color: #137AAD;
+    color: #4285e3ff;
 }
 
 /*titulo do carrossel*/
@@ -516,11 +516,11 @@ main h1 {
 #section_curriculos {
     margin-bottom: 3vh;
     padding-bottom: 3vh;
-    border-bottom: 0.15vw dotted #137AAD;
+    border-bottom: 0.15vw dotted #4285e3ff;
 }
 
 #titulo_curriculos {
-    color: #137AAD;
+    color: #4285e3ff;
     font-size: 2rem;
 }
 
@@ -549,7 +549,7 @@ main h1 {
 
 .accordion-button {
     color: #f7f7f7;
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 0;
@@ -564,7 +564,7 @@ main h1 {
 .accordion-button:not(.collapsed) {
     justify-content: center;
     color: #f7f7f7;
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     box-shadow: none;
 }
 
@@ -607,7 +607,7 @@ main h1 {
 .titulo_de_secao {
     padding: 1vw 0;
     margin: 2vw 0;
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     color: #f7f7f7;
 }
 
@@ -621,7 +621,7 @@ main h1 {
 
 /*section sobre a empresa*/
 #section_sobre_empresa, #section_sobre_membros {
-    border-bottom: 0.2vw dotted #137AAD;
+    border-bottom: 0.2vw dotted #4285e3ff;
 }
 
 .p_do_sobre_nos {
@@ -645,7 +645,7 @@ main h1 {
 
 /*section sobre os membros*/
 .titulo_da_section_sobre_nos {
-    color: #137AAD;
+    color: #4285e3ff;
     font-size: 3vw;
 }
 
@@ -694,7 +694,7 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #137AAD;
+    background-color: #4285e3ff;
     color: #f7f7f7;
 }
 
@@ -787,7 +787,7 @@ footer ul li p {
 
     #container_das_categorias_tablet .home {
         color: #f7f7f7;
-        background-color: #137AAD;
+        background-color: #4285e3ff;
     }
 
     /*buttons*/
@@ -799,7 +799,7 @@ footer ul li p {
     /*cotações*/
     #section_cotacoes {
         margin-top: 12vh;
-        border-bottom: 0.2rem dotted #137AAD;
+        border-bottom: 0.2rem dotted #4285e3ff;
     }
 
     #cotacao_item5 {
@@ -1010,11 +1010,11 @@ footer ul li p {
 
     header {
         height: 11vh;
-        border-bottom: 2vw solid #137AAD;
+        border-bottom: 2vw solid #4285e3ff;
     }
 
     #pag_empregos {
-        border-bottom-color: #137AAD;
+        border-bottom-color: #4285e3ff;
     }
 
     #pag_educacao {
@@ -1089,7 +1089,7 @@ footer ul li p {
 
     .links_paginas_categorias li{
         margin: 0;
-        border-bottom: 0.1vw solid #137AAD;
+        border-bottom: 0.1vw solid #4285e3ff;
     }
 
     .links_paginas_categorias a, .links_paginas_categorias p {
@@ -1103,11 +1103,11 @@ footer ul li p {
     }
 
     .link_do_aside {
-        color: #137AAD;
+        color: #4285e3ff;
     }
 
     .link_do_aside:hover {
-        color: #137AAD;
+        color: #4285e3ff;
     }
 
     #fechar_modal {
@@ -1179,7 +1179,7 @@ footer ul li p {
         display: block;
         margin-top: 12vh;
         row-gap: 1.5vw;
-        border-bottom: 0.6vw dotted #137AAD;
+        border-bottom: 0.6vw dotted #4285e3ff;
     }
 
     #carouselExampleFade p {
@@ -1188,7 +1188,7 @@ footer ul li p {
         padding: 0.5vw 1.5vw;
         border-radius: 5px;
         color: #f7f7f7;
-        background-color: #137AAD;
+        background-color: #4285e3ff;
     }
 
     #carouselExampleFade button {
