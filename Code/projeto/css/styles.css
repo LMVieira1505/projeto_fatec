@@ -2,6 +2,10 @@ body {
     background-color: #ebebeb;
 }
 
+#livia {
+    object-fit: contain;
+}
+
 /*     header     */
 header {
     position: fixed;
