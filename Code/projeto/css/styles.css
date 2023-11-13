@@ -1,9 +1,12 @@
 body {
     background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#livia {
-    object-fit: contain;
+p {
+    margin: 0;
 }
 
 /*     header     */
@@ -163,11 +166,6 @@ header button {
     color: #141414;
 }
 
-#container_header_buttons svg:hover {
-    width: 60%;
-    height: 60%;
-}
-
 #search_button:hover, #botao_de_login:hover, #botao_dark:hover {
     border: 0.1rem solid #141414;
     border-radius: 7px;
@@ -243,6 +241,7 @@ header button {
 
 main{
     background-color: #ebebeb;
+    flex: 1;
 }
 
 main h1 {
@@ -592,7 +591,7 @@ main h1 {
 
 .curriculos_p {
     color: #141414;
-    background-color: #fcffff;
+    background-color: #F7F7F7;
 }
 
 /*titulo de seção*/
@@ -602,6 +601,135 @@ main h1 {
     background-color: #1d4988;
     color: #F7F7F7;
 }
+
+
+
+/*cadastro de usuario*/
+.secao-cadastro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    margin: 2vw auto;
+    padding: 1vw 3vw;
+    background-color: #F7F7F7;
+}
+
+.titulo-cadastro {
+    text-align: center;
+
+    color: #1d4988;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    color: #1d4988;
+}
+
+.label-cadastro {
+    font-weight: 600;
+    margin: 0;
+}
+
+.input-cadastro {
+    margin-bottom: 0.5vw;
+    border-color: #141414;
+    border-style: solid;
+}
+
+#ddd {
+    width: 20%;
+}
+
+#telefone {
+    width: 78%;
+    margin-left: auto;
+}
+
+.cadastro-close-button {
+    width: 2.5rem;
+    position: absolute;
+    top: 0.6vw;
+    right: 0.6vw;
+    border-radius: 7px;
+    border-width: 0;
+    background-color: #F7F7F7;
+}
+
+.cadastro-close-button:hover {
+    border-width: 2px;
+}
+
+.submit-cadastro {
+    width: 30%;
+    color: #F7F7F7;
+    background-color: #1D4988;
+    margin: 2vw auto 1vw;
+}
+
+/*login de usuario*/
+.link-recuperar-senha {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #1D4988;
+}
+
+.link-recuperar-senha:hover {
+    text-decoration: underline;
+}
+
+.container-login-3o {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-login-3o {
+    width: 65%;
+    height: 24px;
+    margin: 1vw auto 0;
+    padding: 0;
+}
+
+.img-login-3o {
+    width: 100%;
+    height: 100%;
+    vertical-align:top;
+}
+
+/*recuperacao de senha*/
+.rec-senha {
+    margin-top: 11vh;
+}
+
+.subtitulo-cadastro {
+    font-size: 1.2rem;    
+    text-align: center;
+    color: #141414;
+}
+
+.label-rec-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #141414;
+}
+
+.radio-container {
+    display: flex;
+}
+
+.input-rec-senha {
+    transform: translateY(2px);
+    margin: 0 0.2rem 0 0.6rem;
+}
+
+.p-cadastro {
+    text-align: center;
+}
+
+
+
 
 /*     sobre nós     */
 /* main do sobre nós */
@@ -952,6 +1080,14 @@ footer ul li p {
         width: 100%;
     }
 
+    /*cadastro usuario*/
+    .secao-cadastro {
+        width: 60%;
+    }
+
+    .login {
+        margin-top: 7vh;
+    }
 
     /*   footer   */
     #container_logo_do_footer {
@@ -987,9 +1123,31 @@ footer ul li p {
     }
 }
 
+@media (max-width: 670px) {
+    /*cadastro usuario*/
+    #ddd {
+        width: 24%;
+    }
+    
+    #telefone {
+        width: 73.4%;
+        margin-left: auto;
+    }
+}
+
 @media (max-width: 600px) {
+    /*cotacoes*/
     #cotacao_item4 {
         display: none;
+    }
+
+    /*cadastro usuario*/
+    .secao-cadastro {
+        width: 70%;
+    }
+
+    .label-rec-senha {
+        flex-direction: column;
     }
 }
 
@@ -1306,6 +1464,36 @@ footer ul li p {
     #main_da_noticia_aberta p {
         font-size: 4vw;
     }
+
+
+    /*cadastro usuario*/
+    .secao-cadastro {
+        width: 95%;
+    }
+
+    .titulo-cadastro {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .cadastro-close-button {
+        top: 0.6vw;
+        right: 0;
+    }
+
+    #ddd {
+        width: 28%;
+    }
+    
+    #telefone {
+        width: 69%;
+    }
+
+    /*login usuario*/
+    .login {
+        margin-top: 10vh;
+    }
+
     
     /*     pagina sobre nós     */
     /* main do sobre nós */
