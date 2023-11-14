@@ -708,24 +708,26 @@ main h1 {
     color: #141414;
 }
 
-.label-rec-senha {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #141414;
-}
-
 .radio-container {
     display: flex;
 }
 
-.input-rec-senha {
+.radio-rec-senha {
     transform: translateY(2px);
     margin: 0 0.2rem 0 0.6rem;
 }
 
 .p-cadastro {
     text-align: center;
+}
+
+.label-rec-senha {
+    width: 100%;
+    margin-left: 5.2%;
+}
+
+.input-rec-senha {
+    width: 94.8%;
 }
 
 

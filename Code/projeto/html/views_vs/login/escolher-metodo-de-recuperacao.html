@@ -160,20 +160,26 @@
                 </svg>
             </button>
 
-            <h3 class="subtitulo-cadastro">Enviar Código Para:</h3>
+            <h3 class="subtitulo-cadastro">Selecione e Insira o Método de Envio do Código de Recuperação:</h3>
 
             <form class="form-cadastro" action="enviar.function" method="post">
-                <label class="label-cadastro label-rec-senha" for="recuperar-senha">
+                <label class="label-cadastro" for="recuperar-senha">
                     <div class="radio-container">
-                        <input class="input-cadastro input-rec-senha" type="radio" name="recuperar-senha">
-                        <p>usuario@email.com</p> 
+                        <input class="input-cadastro radio-rec-senha" type="radio" name="recuperar-senha">
+                        <p>Email</p>
                     </div>
+                    <label class="label-rec-senha" for="email">
+                        <input class="input-cadastro  input-rec-senha" type="email" id="email" name="email" placeholder="Ex: joaozinho@email.com">
+                    </label>
 
                     <div class="radio-container">
-                        <input class="input-cadastro input-rec-senha" type="radio" name="recuperar-senha">
-                        <p>(16)12345-6789</p> 
+                        <input class="input-cadastro radio-rec-senha" type="radio" name="recuperar-senha">
+                        <p>Telefone</p> 
                     </div>
-                </label>  
+                    <label class="label-rec-senha" for="tel-rec-senha">
+                        <input class="input-cadastro input-rec-senha" type="tel" id="tel-rec-senha" name="tel-rec-senha" placeholder="Ex: 16997610798">
+                    </label>
+                </label>
 
                 <input class="submit-cadastro" type="submit" value="Ok">
             </form>
