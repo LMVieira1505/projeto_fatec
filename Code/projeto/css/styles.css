@@ -200,34 +200,10 @@ header button {
     padding: 0;
 }
 
-.modal{
-    margin-top: 17vh;
-}
-
-.form-label{
-    color: #141414;
-}
-
-#contactModalLabel{
-    color: #141414;
-}
-
-#entrar{
-    background-color: #1D4988;
-    width: max-content;
-    height: 2rem;
-    padding: 0 0.5rem;
-    color: #fcffff;
-}
-
-#enviar{
-    background-color: #1D4988;
-    width: max-content;
-    color: #fcffff;
-}
-
-.modal-backdrop {
-    z-index: 9;
+#link-login-header {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
 /*dark mode*/
@@ -668,6 +644,14 @@ main h1 {
     margin: 2vw auto 1vw;
 }
 
+.dois-botoes-esquerda {
+    margin: 2vw 2.4% 1vw 15%;
+}
+
+.dois-botoes-direita {
+    margin: 2vw 15% 1vw 2.4%;
+}
+
 /*login de usuario*/
 .link-recuperar-senha {
     text-decoration: none;
@@ -723,11 +707,26 @@ main h1 {
 
 .label-rec-senha {
     width: 100%;
-    margin-left: 5.2%;
+    margin-left: 1.1rem;
 }
 
 .input-rec-senha {
     width: 94.8%;
+}
+
+.accordion-rec-sen-content {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+}
+    
+    
+[id^=radio-rec-senha]:checked ~ .accordion-rec-sen-content {
+    height: 2rem;
 }
 
 

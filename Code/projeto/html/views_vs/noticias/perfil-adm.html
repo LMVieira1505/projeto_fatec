@@ -53,14 +53,35 @@
                 </div>
             </a>
             <!--login-->
-            <a id="link-login-header" href="fazer-login.html">
-                <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                        </svg>
-                </button>
-            </a>
+            <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <button type="submit" id="entrar" class="text-center btn">Entrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="botao_de_login" class="botao_header" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+            </button>
             <!--dark-->
             <a class="botao_header" href="../html/index_dark.html">
                 <button id="botao_dark">
@@ -124,52 +145,38 @@
 
 
 
-
-
-
     <!--  /main desktop/  -->
-    <main class="pag_sem_cotacoes">
-        <!-- pagina de cadastro de usuario -->
-        <section class="secao-cadastro rec-senha">
-            <h2 class="titulo-cadastro">Recuperação de Senha</h2>
-
-            <button class="cadastro-close-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#141414" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-
-            <h3 class="subtitulo-cadastro">Selecione e Insira o Método de Envio do Código de Recuperação:</h3>
-            
-            <form class="form-cadastro" action="enviar.function" method="post">
-                <div class="accordion-rec-sen">
-                    <div class="accordion-rec-sen-item">
-                        <input type="radio" name="rec-senha" checked="checked" id="radio-rec-senha-1">
-                        <label class="label-cadastro" for="radio-rec-senha-1">Email</label>
-                        <div class="accordion-rec-sen-content">
-                            <label class="label-rec-senha" for="email" id="collapseOne">
-                                <input class="input-cadastro input-rec-senha" type="email" id="email" name="email" placeholder="Ex: joaozinho@email.com">
-                            </label>
-                        </div>
-                    </div>
-            
-                    <div class="accordion-rec-sen-item">
-                        <input type="radio" name="rec-senha" id="radio-rec-senha-2">
-                        <label class="label-cadastro" for="radio-rec-senha-2">Telefone</label>
-                        <div class="accordion-rec-sen-content">
-                            <label class="label-rec-senha" for="tel-rec-senha" id="collapseTwo">
-                                <input class="input-cadastro input-rec-senha" type="tel" id="tel-rec-senha" name="tel-rec-senha" placeholder="Ex: 16997610798">
-                            </label>
-                        </div>
-                    </div>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <img>
                 </div>
-            
-                <input class="submit-cadastro" type="submit" value="Ok">
-            </form>
+
+                <div>
+                    <div>
+                        <h1></h1>
+                        <button></button>
+                    </div>
+
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                </div>
+            </div>
+
+            <button></button>
+
+            <div>
+                <h2></h2>
+
+                <card>
+                    <img>
+                    <h3></h3>
+                </card>
+            </div>
         </section>
     </main>
-
-    
 
 
 
