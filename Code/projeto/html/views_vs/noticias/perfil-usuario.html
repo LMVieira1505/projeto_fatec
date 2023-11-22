@@ -146,34 +146,57 @@
 
 
     <!--  /main desktop/  -->
-    <main>
-        <section>
-            <div>
-                <div>
-                    <img>
+    <main class="pag_sem_cotacoes">
+        <section class="section-perfil">
+            <div class="container-perfil-img-info">
+                <div class="container-perfil-img">
+                    <img class="perfil-imagem" src="../../../img/educacao_img/hospital.jpg">
                 </div>
 
-                <div>
-                    <div>
-                        <h1></h1>
-                        <button></button>
-                    </div>
+                <div class="container-perfil-info">
+                    <h2 class="perfil-nome-usuario">GABRIEL FECCHIO PARAVANI LAROCCA</h2>
 
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
+                    <div class="container-info-sec">
+                        <h4 class="perfil-info-sec">GFPL</h4>
+                        <h4 class="perfil-info-sec">(16) 99887-6655</h4>
+                        <h4 class="perfil-info-sec">gabriel@email.com</h4>
+                    </div>
                 </div>
             </div>
 
-            <button></button>
+            <button class="editar-infos-perfil"></button>
 
-            <div>
-                <h2></h2>
+            <button class="cadastro-close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#141414" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
 
-                <card>
-                    <img>
-                    <h3></h3>
-                </card>
+            <div class="container-perfil-funcoes">
+                <button class="perfil-info-curriculo"></button>
+
+                <div class="carrossel-perfil">
+                    <h2 class="carrossel-perfil-tit"></h2>
+
+                    <button class="editar-cont-carrossel"></button>
+
+                    <!-- foreach para retornar cada currículo do usuário -->
+                    <card class="mini-curriculos">
+                        <img class="img-pdf-curriculo">                   
+                    </card>
+                </div>
+
+                <div class="carrossel-perfil">
+                    <h2 class="carrossel-perfil-tit"></h2>
+
+                    <button class="editar-cont-carrossel"></button>
+
+                    <!-- foreach para retornar as notícias salvas pelo usuário -->
+                    <card class="noticia-salva">
+                        <img class="mini-img-not">
+                        <h4 class="noticia-salva-tit"></h4>              
+                    </card>
+                </div>
             </div>
         </section>
     </main>

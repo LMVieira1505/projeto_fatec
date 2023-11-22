@@ -730,6 +730,53 @@ main h1 {
 }
 
 
+/* perfil */
+
+/* perfil de usuario */
+.section-perfil {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #f7f7f7;
+    color: #1d4988;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container-perfil-img-info {
+    display: flex;
+}
+
+.container-perfil-img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.perfil-imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container-perfil-info {
+    width: 76%;
+    margin-left: 1rem;
+}
+
+.perfil-nome-usuario {
+    font-size: 1.7rem;
+}
+
+.container-info-sec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfil-info-sec {
+    font-size: 1rem;
+    margin-right: 2rem;
+}
 
 
 /*     sobre nós     */
