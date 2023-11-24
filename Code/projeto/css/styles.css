@@ -625,6 +625,7 @@ main h1 {
 
 .cadastro-close-button {
     width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     top: 0.6vw;
     right: 0.6vw;
@@ -746,6 +747,8 @@ main h1 {
 
 .container-perfil-img-info {
     display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .container-perfil-img {
@@ -764,18 +767,45 @@ main h1 {
     margin-left: 1rem;
 }
 
+.perfil-titulo {
+    position: relative;
+}
+
 .perfil-nome-usuario {
     font-size: 1.7rem;
+    padding-right: 1.5rem;
 }
 
 .container-info-sec {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .perfil-info-sec {
     font-size: 1rem;
     margin-right: 2rem;
+}
+
+.perfil-close-button {
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+}
+
+.container-perfil-funcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-info-curriculo {
+    width: 50%;
+    margin: 0 auto;
+    border-color: #141414;
+    color: #F7F7F7;
+    background-color: #1D4988;
 }
 
 
